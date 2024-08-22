@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&display=swap');
+
+:root {
+    --Dark-blue-300: #0A3871;
+    --gray-light: #D8DFE8;
+    --gray-400: #495057;
+    --light-blue: #F3F5FC;
+    --white: #FFFFFF;
+
+    --dark-blue-100: #609ED4;
+    --dark-blue-200: #356EA9;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--light-blue);
+}
+
+.cabecalho {
+    width: 100%;
+    margin: 40px;
+}
+
+.image:hover{
+    height: 48px;
+    margin-right: 100px;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+.conteiner {
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.conteudo-left{
+    width: 60%;
+    height: 100%;
+    padding-top: 40px;
+}
+
+form {
+    padding-left: 110px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: calc(100% - 148px);
+}
+
+.conteudo-textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    color:var(--Dark-blue-300);
+    
+    font-family: "inter" sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 150%;
+    background-color: transparent;
+}
+
+.conteudo-textarea::placeholder {
+    color: var(--Dark-blue-300);
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-family: "Inter" sans-serif;
+    font-size: 12px;
+    color: var(--gray-400);
+    opacity: 0.8;
+    margin: 0 0 16px 8px;
+}
+
+.botoes {
+    display: flex;
+    gap: 24px;
+}
+
+button {
+    width: 328px;
+    height: 67px;
+    background-color: transparent;
+    text-align: center;
+    box-shadow: none;
+    border: 1px solid var(--Dark-blue-300);
+    border-radius: 24px;
+    padding: 24px;
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 19px;
+    outline: none;
+}
+
+.botao-crip {
+    background-color: var(--Dark-blue-300);
+    color: var(--white);
+
+}
+
+.botao-descrip{
+    background-color: var(--gray-light);
+    color: var(--Dark-blue-300);
+}
+
+.conteudo-right {
+    background: var(--white);
+    width: 40%;
+    height: 680px;
+    margin: 0px 40px 40px 100px;
+    text-align: center;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.521);
+    padding: 25px;
+}
+
+ .image-right {
+    margin: 150px 32px 0 32px;
+}
+
+.paragrafo-forte {
+    font-family: "inter" sans-serif;
+    font-size: 24px;
+    color: var(--gray-400);
+    font-weight: 700px;
+    line-height: 120%;
+    margin: 32px 32px 32px 16px;
+}
+
+.paragrafo {
+    font-family: "inter" sans-serif;
+    font-size: 16px;
+    color: var(--gray-400);
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+}
+
+.botao-copy {
+    background-color: var(--gray-light);
+    color: var(--Dark-blue-300);
+
+    width: 100%;
+    margin-top: 30px;
+}
+
+.rodape {
+    display: block;
+    height: auto;
+    padding: 40px 0;
+    text-align: center;
+    font-weight: 400;
+    color: var(--white);
+    background: linear-gradient(var(--dark-blue-100), var(--dark-blue-200), var(--Dark-blue-300));
+
+}
+
+.logo-link {
+    width: 60px;
+    height: 90px;
+    margin: 15px 5px 20px 5px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:16px;
+}
+
+.sem-retorno p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-400);
+}
+
+.texto-criptografado {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto-criptografado p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: left;
+    color: var(--gray-400);
+}
+
+.d-none {
+    display: none;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .conteiner {
+        height: auto;
+        max-height: unset;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto-principal {
+        width: 100%;
+    }
+
+    .conteudo-left {
+        width: 100%;
+    }
+    .conteudo-right {
+        justify-items: center;
+        height: 100%;
+        width: 90%;
+        margin: auto;
+    }
+
+    .botoes {
+        display: flex;
+        align-content: space-between;
+        padding-left: 0;
+    }
+
+    .botao-crip .botao-descrip {
+        width: 100%;
+    }
+
+    .botao-copy{
+        margin-top: 30px;
+    }
+
+    form {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .conteudo-textarea {
+        margin-top: 50px;
+        margin-bottom: 0;
+        resize: none;
+        height: 400px !important;
+    }
+
+    .conteudo-right{
+        width: 100%;
+        padding: 20px 10px 20px 10px;
+        margin: 0;
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .rodape {
+        margin-top: 20px;
+    }
+
+    .image-right{
+        display: none;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .conteiner {
+       height: auto;
+        max-height: unset;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto-principal {
+        width: 100%;
+    }
+
+    .conteudo-left {
+        width: 100%;
+    }
+    .conteudo-right {
+        justify-items: center;
+        height: 100%;
+        width: 90%;
+        margin: auto;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        padding-left: 0;
+    }
+
+    .botao-crip .botao-descrip {
+        width: 100%;
+    }
+
+    .botao-copy{
+        margin-top: 30px;
+    }
+
+    form {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .conteudo-textarea {
+        margin-top: 50px;
+        margin-bottom: 0;
+        resize: none;
+        height: 400px !important;
+    }
+
+    .conteudo-right{
+        width: 100%;
+        padding: 20px 10px 20px 10px;
+        margin: 0;
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .rodape {
+        margin-top: 30px;
+    }
+
+    .image-right{
+        display: none;
+    }
+    
+}

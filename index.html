@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decordificador de texto</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <link rel="stylesheet" href="src/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        
+        <img class="image" src="assets/Frame 6.png">
+
+    </header>
+
+    <main class="conteiner">
+
+            <div class="conteudo-left">
+                <form>
+
+                    <textarea id="texto-principal" type="text" class="conteudo-textarea" placeholder="Digite seu texto"></textarea>
+                <div>
+                    <div class="info">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        
+                        <p>Apenas letras minúsculas e sem acento.</p>
+                    </div>
+    
+                    <div class="botoes">
+    
+                        <button class="botao-crip" id="criptografar">Criptografar</button>
+                        <button class="botao-descp" id="descriptografar">Descriptografar</button>
+    
+                    </div>
+                </div>
+
+                </form>
+
+            </div>
+
+            <div class="conteudo-right">
+                <div class="sem-retorno">
+                    <img class="image-right" id="imagem-nada-encontrado" src="assets/High quality products 1 1.png">
+                    
+                    <p class="paragrafo-forte"> <strong>Nenhuma mensagem encontrada</strong> </p>
+                    <p class="paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <div class="texto-criptografado d-none">
+                    <p></p>
+                    <button class="botao-copy" id="copiar" onclick="copiarTexto()">Copiar</button>
+                </div> 
+            </div>
+    </main>
+    
+    <footer class="rodape">
+        <div class="link">
+            <a target="_blank" href="https://www.linkedin.com/in/yvina-silva/">
+                <img src="assets/linkedin.png" class="logo-link" alt="linkedin">
+            </a>
+            <a target="_blank" href="https://github.com/Yvinasilva" >
+                <img src="assets/logotipo-do-github.png" class="logo-link" id="logo" alt="github">
+            </a>
+        </div>
+        <p>Desenvolvido por Yvina Silva</p>
+
+    </footer>
+
+    <script src="./src/script.js" defer></script>
+
+</body>
+</html>
